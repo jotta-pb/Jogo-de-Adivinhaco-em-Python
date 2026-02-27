@@ -8,7 +8,7 @@ tentativas = 0
 while True:
     num = int(input("Estou pensando em um número entre 0 e 10, consegue adivinhar qual é ?\nResposta: "))
     
-    if 0 <= num <= 10 :
+    if 0 < num <= 10 :
             
         while num != sorteio:
             num = int(input("Você errou! Tente novamente.\nNúmero: "))

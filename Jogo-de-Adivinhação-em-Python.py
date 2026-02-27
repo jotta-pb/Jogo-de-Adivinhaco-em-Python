@@ -11,8 +11,13 @@ while True:
     if 0 < num <= 10 :
             
         while num != sorteio:
-            num = int(input("Você errou! Tente novamente.\nNúmero: "))
-            tentativas += 1
+            if sorteio < num:
+                num = int(input("Você errou! Tente um número menor.\nNúmero: "))
+                tentativas += 1
+                
+            else:
+                num = int(input("Você errou! Tente um número maior.\nNúmero: "))
+                tentativas += 1
             
         if num == sorteio:
             print(f"\nVocê acertou! Eu pensei no número {sorteio} e você precisou de {tentativas} tentaivas!")
